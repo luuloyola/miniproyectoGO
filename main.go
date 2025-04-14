@@ -21,7 +21,12 @@ func main() {
 	}
 
 	for i := 0; i < len(arrPuntajes); i++ {
-		fmt.Printf("\nEl puntaje %d aparece %d veces\n", i+1, arrPuntajes[i])
+		fmt.Printf("\nEl puntaje %d aparece %d ", i+1, arrPuntajes[i])
+		if arrPuntajes[i] == 1 {
+			fmt.Printf("vez\n")
+		} else {
+			fmt.Printf("veces\n")
+		}
 	}
 
 	if arrPuntajes[0]+arrPuntajes[1] < arrPuntajes[3]+arrPuntajes[4] {
